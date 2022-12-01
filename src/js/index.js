@@ -58,7 +58,7 @@ const getAllCountries = async function () {
   <div class="countries__country-flag">
     <img
       class="countries__country-flag--img"
-      src="${state.data[i].img}"
+      src="${state.data[i].img}" alt="country-flag"
     />
   </div>
   <div class="countries__details">
@@ -95,7 +95,7 @@ const getSearchedCountry = async function (country) {
   <div class="countries__country-flag">
     <img
       class="countries__country-flag--img"
-      src="${data.flags.svg}"
+      src="${data.flags.svg}" alt="country-flag"
     />
   </div>
   <div class="countries__details">
@@ -142,7 +142,9 @@ countriesEl.addEventListener("click", async function (e) {
     const html = `<div class="country">
   <button class="country__button"><span>&larr;</span>Back</button>
   <div class="country-flag">
-    <img class="country-flag--img" src="${state.currentCountry.flag}" />
+    <img class="country-flag--img" src="${
+      state.currentCountry.flag
+    }" alt="country-flag" />
   </div>
   <div class="country__details">
   
@@ -202,7 +204,7 @@ selectEl.addEventListener("change", function (e) {
 <div class="countries__country-flag">
   <img
     class="countries__country-flag--img"
-    src="${data[i].img}"
+    src="${data[i].img}" alt="country-flag"
   />
 </div>
 <div class="countries__details">
