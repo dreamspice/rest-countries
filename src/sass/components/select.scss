@@ -1,0 +1,27 @@
+.select {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--elements);
+  color: var(--text);
+  cursor: pointer;
+  &:focus {
+    background-color: var(--elements);
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .select {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .select {
+    font-size: 1.8rem;
+  }
+}

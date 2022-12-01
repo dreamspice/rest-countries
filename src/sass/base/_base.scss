@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-nunito;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  background-color: var(--bg);
+}

@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: var(--elements);
+  color: var(--text);
+  font-weight: 600;
+  &__heading {
+    font-size: 1.4rem;
+  }
+  &__mode {
+    display: flex;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    &__heading {
+      font-size: 1.8rem;
+    }
+    &__mode {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    padding: 3rem 4rem;
+    &__heading {
+      font-size: 2.2rem;
+    }
+    &__mode {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .nav {
+    padding: 3rem 8rem;
+    &__heading {
+      font-size: 2.6rem;
+    }
+    &__mode {
+      font-size: 2.6rem;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+.countries {
+  display: grid;
+  animation-duration: 1s;
+  animation-name: slidein;
+  &__country {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 17.5rem;
+    border-radius: 1rem 1rem 0 0;
+    margin: 5rem auto 25rem auto;
+    transition: transform 1s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+    &-flag {
+      background-color: var(--elements);
+    }
+    &-flag--img {
+      width: 25rem;
+      height: 17.5rem;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+  &__details * {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  &__details {
+    background-color: var(--elements);
+    margin: 0 auto;
+    width: 25rem;
+    color: var(--text);
+    font-weight: 600;
+    padding-bottom: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    &--name {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .countries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1800px) {
+  .countries {
+    &__country {
+      width: 30rem;
+      &-flag--img {
+        width: 30rem;
+        height: 20rem;
+      }
+    }
+    &__details {
+      width: 30rem;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.form {
+  text-align: center;
+  &__input {
+    margin-top: 2rem;
+    width: 60vw;
+    background: url("/src/images/glass.svg") no-repeat left;
+    background-size: 1.6rem;
+    padding: 1.5rem 4rem 1.5rem 6rem;
+    border-radius: 0.5rem;
+    background-position: 25px;
+    border: none;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    color: var(--text);
+    background-color: var(--elements);
+    &::placeholder {
+      color: var(--text);
+      font-size: 1.3rem;
+    }
+    &:focus {
+      background-color: rgba($color: gray, $alpha: 0.1);
+      outline: none;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .form {
+    &__input {
+      background-size: 2rem;
+      padding: 1.8rem 4.3rem 1.8rem 6.2rem;
+      font-size: 1.5rem;
+      &::placeholder {
+        color: $light-mode-input;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .form {
+    &__input {
+      background-size: 2rem;
+      padding: 2rem 4.6rem 1.8rem 6.4rem;
+      font-size: 1.6rem;
+      &::placeholder {
+        color: $light-mode-input;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .form {
+    &__input {
+      background-size: 2.2rem;
+      padding: 2rem 4.6rem 1.8rem 7rem;
+      font-size: 1.8rem;
+      &::placeholder {
+        color: $light-mode-input;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1800px) {
+  .form {
+    &__input {
+      background-size: 2.2rem;
+      padding: 2rem 4.6rem 1.8rem 7rem;
+      font-size: 2.2rem;
+      &::placeholder {
+        color: $light-mode-input;
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
